@@ -59,7 +59,7 @@ button {
     position: fixed; 
     top: 0;
     left: 0;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@ button {
 /* MAIN */
 
 main {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     overflow-y: auto;
     background-color: #141922;
     color: white;
@@ -90,14 +90,13 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
     background-color: #282828;
 }
 
 .left-footer, .middle-footer, .right-footer {
     display: flex;
     align-items: center;
-    font-size: 10px;
 }
 
 .left-footer {
@@ -111,21 +110,28 @@ footer {
 
 .song-info {
     padding: 0 5px;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .song-title {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .middle-footer {
     flex-direction: column;
     justify-content: center;
+    width: 33%;
+}
+
+.middle-footer .song-status,
+.middle-footer .controls {
+    width: 100%;
+    text-align: center;
 }
 
 .song-status {
-    margin-top: 10px;
-    font-size: 8px;
+    margin-top: 5px;
+    font-size: 10px;
 }
 
 .progress-bar {
@@ -134,6 +140,7 @@ footer {
     border-radius: 5px;
     background-color: grey;
     position: relative;
+    vertical-align: middle;
 }
 
 .white-bar {
@@ -147,7 +154,7 @@ footer {
 }
 
 .song-bar {
-    width: 80px;
+    width: 70%;
 }
 
 .right-footer {
@@ -164,8 +171,12 @@ footer {
 }
 
 .middle-footer .controls .fas {
-    font-size: 11px;
     padding: 0 5px;
+}
+
+.fa-play-circle {
+    font-size: 25px;
+    vertical-align: middle;
 }
 
 /* RESPONSIVE */
