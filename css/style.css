@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -28,7 +28,7 @@ img {
 
 /* HEADER */
 
-header {
+#main-header {
     position: fixed;
     top: 0;
     left: 50px;
@@ -179,7 +179,7 @@ footer {
         width: 100px;
     }
 
-    header {
+    #main-header {
         left: 100px;
         width: calc(100% - 100px);
     }
