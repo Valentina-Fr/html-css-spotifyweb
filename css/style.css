@@ -4,7 +4,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: sans-serif;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* UTILS */
+
+.font-grey {
+    color: grey;
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -47,7 +66,6 @@ button {
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    color: white;
 }
 
 .logo .fa-spotify,
@@ -70,8 +88,84 @@ main {
 /* FOOTER */
 
 footer {
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     background-color: #282828;
+}
+
+.left-footer, .middle-footer, .right-footer {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.left-footer {
+    margin-left: 5px;
+}
+
+.song {
+    width: 30px;
+    height: 30px;
+}
+
+.song-info {
+    padding: 0 5px;
+    font-size: 8px;
+}
+
+.song-title {
+    font-size: 10px;
+}
+
+.middle-footer {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-status {
+    margin-top: 10px;
+    font-size: 8px;
+}
+
+.progress-bar {
+    display: inline-block;
+    height: 3px;
+    border-radius: 5px;
+    background-color: grey;
+    position: relative;
+}
+
+.white-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.song-bar {
+    width: 80px;
+}
+
+.right-footer {
+    margin-right: 5px;
+}
+
+.volume-bar {
+    width: 40px;
+}
+
+.small-control .far, 
+.right-footer .controls .fas {
+    padding: 0 3px;
+}
+
+.middle-footer .controls .fas {
+    font-size: 11px;
+    padding: 0 5px;
 }
 
 /* RESPONSIVE */
