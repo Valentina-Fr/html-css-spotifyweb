@@ -23,6 +23,7 @@ img {
 
 .font-grey {
     color: grey;
+    cursor: pointer;
 }
 
 .font-grey {
@@ -43,6 +44,10 @@ img {
 
 .none {
     display: none;
+}
+
+.font-grey:hover, a:hover {
+    color: white;
 }
 
 /* HEADER */
@@ -70,6 +75,10 @@ button {
     font-size: 14px;
     margin-top: 15px;
     margin-right: 25px;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 /* SIDEBAR */
