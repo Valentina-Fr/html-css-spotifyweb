@@ -125,6 +125,22 @@ main {
     padding-top: 60px;
 }
 
+ul {
+    margin: 30px auto;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
 /* FOOTER */
 
 footer {
