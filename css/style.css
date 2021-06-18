@@ -17,13 +17,32 @@ img {
 
 /* UTILS */
 
+.d-flex {
+    display: flex;
+}
+
 .font-grey {
     color: grey;
 }
 
-.flex-column-container {
-    display: flex;
-    flex-direction: column;
+.font-grey {
+    color: grey;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.none {
+    display: none;
 }
 
 /* HEADER */
@@ -34,7 +53,7 @@ img {
     left: 50px;
     height: 60px;
     width: calc(100% - 50px);
-    background-color: rgba(20, 25, 34, 0.4);
+    background-color: rgba(8, 11, 18, 0.5);
 }
 
 .topbar {
@@ -64,14 +83,35 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     background-color: #000000;
 }
 
-.logo .fa-spotify,
-.action [class*="fa-"] {
-    font-size: 20px;
-    padding: 10px 0;
+svg {
+    margin: 5px 10px;
+    width: 20px;
+}
+
+.playlist {
+    margin: 5px 10px;
+}
+
+.m-t-b-5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.grey {
+    filter: opacity(0.5)
+}
+
+.background-grey {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.fa-plus-square {
+    font-size: 30px;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -171,7 +211,7 @@ footer {
 }
 
 .middle-footer .controls .fas {
-    padding: 0 5px;
+    padding: 0 8px;
 }
 
 .fa-play-circle {
@@ -181,17 +221,30 @@ footer {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     main {
-        padding-left: 100px;
+        padding-left: 140px;
     }
 
     .sidebar {
-        width: 100px;
+        width: 140px;
     }
 
     #main-header {
         left: 100px;
-        width: calc(100% - 100px);
+        width: calc(100% - 140px);
+    }
+
+    .none {
+        display: block;
+    }
+
+    .spotify-logo--text {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .spotify-logo {
+        display: none;
     }
 }
