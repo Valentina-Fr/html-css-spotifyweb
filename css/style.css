@@ -141,6 +141,18 @@ ul li a {
     color: grey;
 }
 
+.playlist-cover {
+    padding: 10px;
+}
+
+main h2, main h5 {
+    padding-left: 10px;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
 /* FOOTER */
 
 footer {
@@ -247,7 +259,7 @@ footer {
     }
 
     #main-header {
-        left: 100px;
+        left: 140px;
         width: calc(100% - 140px);
     }
 
