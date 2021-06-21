@@ -71,6 +71,7 @@ ul li a {
     height: 60px;
     width: calc(100% - 50px);
     background-color: rgba(8, 11, 18, 0.5);
+    z-index: 1;
 }
 
 .topbar {
@@ -196,7 +197,7 @@ main h5 {
     filter: opacity(0.5);
 }
 
-.limegreen::after {
+.active::after {
     content: "";
     display: block;
     border-bottom: 1px solid limegreen;
