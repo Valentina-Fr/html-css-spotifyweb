@@ -23,11 +23,12 @@ ul {
 
 ul li a {
     text-decoration: none;
-    color: grey;
+    color: white;
+    opacity: 0.5;
 }
 
 .font-grey:hover, a:hover {
-    color: white;
+    opacity: 1;
 }
 
 /* UTILS */
@@ -36,13 +37,14 @@ ul li a {
     display: none;
 }
 
-.font-grey {
-    color: grey;
-    cursor: pointer;
+.current {
+    opacity: 1;
+    color: white;
 }
 
-.font-white {
-    color: white;
+.font-grey {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .font-small {
@@ -136,7 +138,17 @@ svg {
 }
 
 hr {
-    width: 80%;
+    width: 90%;
+    opacity: 0.5;
+}
+
+.active-sidebar::before {
+    content: "";
+    border-right: 2px solid limegreen;
+    display: inline;
+    margin-right: 8px;
+    margin-left: -10px;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -252,6 +264,7 @@ footer {
 .song-status {
     margin-top: 5px;
     font-size: 10px;
+    cursor: pointer;
 }
 
 .progress-bar {
@@ -279,6 +292,7 @@ footer {
 
 .right-footer {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .volume-bar {
