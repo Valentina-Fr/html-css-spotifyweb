@@ -116,10 +116,14 @@ button:hover {
     margin-left: 10px;
 }
 
-svg {
+.sidebar img {
     margin: 5px 0;
     width: 20px;
     vertical-align: middle;
+}
+
+.sidebar .spotify-logo-text {
+    width: 90%;
 }
 
 .playlist, .sidebar h4 {
@@ -343,7 +347,7 @@ footer {
         display: inline-block;
     }
 
-    .spotify-logo--text {
+    .spotify-logo-text {
         width: 80%;
         margin: 10px 0;
     }
